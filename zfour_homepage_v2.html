@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zfour HRMS — Best HRMS Software in India | Payroll, Attendance & Compliance</title>
+<meta name="description" content="India's leading HRMS for SMEs. Automate payroll, attendance, leave & compliance. Built for Indian statutory requirements — PF, ESI, TDS, PT. Book a free demo today.">
+<link rel="canonical" href="https://zfour.in">
+<meta property="og:title" content="Zfour HRMS — Best HRMS Software in India for SMEs">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;background:#fff;color:#1E293B;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+:root{
+--navy-950:#080E1F;--navy-900:#0D1321;--navy-800:#111827;--navy-700:#1a2456;
+--navy-600:#1E3A8A;--navy-500:#1D4ED8;--navy-400:#2563EB;
+--blue-light:#DBEAFE;--blue-50:#EFF6FF;
+--green-700:#15803D;--green-600:#16A34A;--green-500:#22C55E;
+--green-100:#DCFCE7;--green-50:#F0FDF4;
+--amber-500:#F59E0B;--amber-100:#FEF3C7;
+--slate-900:#0F172A;--slate-800:#1E293B;--slate-700:#334155;
+--slate-600:#475569;--slate-500:#64748B;--slate-400:#94A3B8;
+--slate-300:#CBD5E1;--slate-200:#E2E8F0;--slate-100:#F1F5F9;--slate-50:#F8FAFC;
+--bg:#F5F6FA;--w:#fff;
+--py:88px;--r:6px;--rm:10px;--rl:14px;--rx:20px;--r2:28px;--rf:100px
+}
+.container{max-width:1160px;margin:0 auto;padding:0 28px}
+a{text-decoration:none;color:inherit}
+.section{padding:var(--py) 0}
+.alt{background:var(--bg)}
+.row{display:grid;gap:20px}
+.tc{text-align:center}
+.tc .sub{margin:0 auto}
+
+/* TYPE */
+.eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--navy-600);text-transform:uppercase;letter-spacing:.09em;background:var(--blue-50);padding:5px 14px;border-radius:var(--rf);margin-bottom:14px}
+.eyebrow.w{background:rgba(255,255,255,.1);color:#93C5FD;border:1px solid rgba(255,255,255,.18)}
+.eyebrow.g{background:var(--green-50);color:var(--green-700)}
+.h2{font-size:clamp(26px,3.2vw,38px);font-weight:800;color:var(--navy-600);letter-spacing:-.025em;line-height:1.18;margin-bottom:12px}
+.h2.w{color:#fff}
+.sub{font-size:16px;color:var(--slate-600);line-height:1.7;max-width:540px}
+.sub.w{color:rgba(255,255,255,.65)}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;padding:12px 26px;border-radius:var(--rm);cursor:pointer;border:2px solid transparent;transition:all .18s;white-space:nowrap;letter-spacing:-.01em;font-family:inherit}
+.btn-p{background:var(--navy-600);color:#fff;border-color:var(--navy-600)}
+.btn-p:hover{background:#152d70;transform:translateY(-1px);box-shadow:0 8px 24px rgba(30,58,138,.28)}
+.btn-g{background:var(--green-600);color:#fff;border-color:var(--green-600)}
+.btn-g:hover{background:var(--green-700);transform:translateY(-1px);box-shadow:0 8px 24px rgba(22,163,74,.3)}
+.btn-gh{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-gh:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.7)}
+.btn-o{background:#fff;color:var(--navy-600);border-color:var(--slate-200)}
+.btn-o:hover{border-color:var(--navy-400);background:var(--blue-50)}
+.btn-lg{font-size:15px;padding:14px 32px}
+.btn-sm{font-size:13px;padding:9px 20px}
+
+/* NAV */
+.nav-w{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--slate-200);transition:box-shadow .2s}
+.nav-w.on{box-shadow:0 4px 24px rgba(0,0,0,.07)}
+.nav{display:flex;align-items:center;height:66px;gap:4px}
+.logo{display:flex;align-items:baseline;gap:3px;margin-right:auto;font-size:20px;font-weight:900;color:var(--navy-600);letter-spacing:-.04em}
+.logo .dot{color:var(--green-600);font-size:24px;line-height:1}
+.logo-lbl{font-size:12px;font-weight:600;color:var(--slate-400);border-left:1px solid var(--slate-200);padding-left:8px;margin-left:6px;letter-spacing:0}
+.nmenu{display:flex;list-style:none;gap:2px;margin-right:14px}
+.nmenu>li{position:relative}
+.nmenu>li>a{display:flex;align-items:center;gap:4px;font-size:14px;font-weight:500;color:var(--slate-700);padding:8px 14px;border-radius:var(--r);transition:all .15s}
+.nmenu>li>a:hover{color:var(--navy-600);background:var(--blue-50)}
+.chev{font-size:10px;color:var(--slate-400);transition:transform .2s}
+.nmenu>li:hover .chev{transform:rotate(180deg)}
+.dd{display:none;position:absolute;top:calc(100% + 6px);left:0;background:#fff;border:1px solid var(--slate-200);border-radius:var(--rl);box-shadow:0 20px 50px rgba(0,0,0,.12);padding:10px;min-width:220px;z-index:300}
+.nmenu>li:hover .dd{display:block}
+.dd a{display:block;padding:10px 14px;font-size:14px;font-weight:500;color:var(--slate-700);border-radius:var(--r);transition:all .15s}
+.dd a:hover{color:var(--navy-600);background:var(--blue-50)}
+.dd a span{display:block;font-size:12px;color:var(--slate-400);font-weight:400;margin-top:1px}
+.nav-act{display:flex;align-items:center;gap:10px}
+.nlogin{font-size:14px;font-weight:500;color:var(--slate-600);padding:8px 16px;border-radius:var(--r);transition:all .15s}
+.nlogin:hover{color:var(--navy-600);background:var(--slate-100)}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,var(--navy-950) 0%,#0f1840 30%,var(--navy-700) 65%,var(--navy-600) 100%);padding:96px 0 88px;position:relative;overflow:hidden;text-align:center}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 50% 110%,rgba(37,99,235,.22) 0%,transparent 65%),radial-gradient(ellipse 40% 30% at 80% 15%,rgba(22,163,74,.07) 0%,transparent 55%)}
+.hero>*{position:relative;z-index:1}
+.hbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#93C5FD;font-size:13px;font-weight:600;padding:7px 18px;border-radius:var(--rf);margin-bottom:28px;backdrop-filter:blur(4px)}
+.hbadge-dot{width:7px;height:7px;background:var(--green-500);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+.hero h1{font-size:clamp(34px,5vw,58px);font-weight:900;color:#fff;letter-spacing:-.045em;line-height:1.06;margin-bottom:22px;max-width:780px;margin-left:auto;margin-right:auto}
+.hero h1 em{font-style:normal;color:#60A5FA}
+.hero-sub{font-size:18px;color:rgba(255,255,255,.62);max-width:540px;margin:0 auto 36px;line-height:1.65;font-weight:400}
+.hpills{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.hpill{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:9px 20px;border-radius:var(--rf);backdrop-filter:blur(4px)}
+.hpn{font-size:17px;font-weight:900;color:#fff;letter-spacing:-.02em}
+.hpl{font-size:13px;color:rgba(255,255,255,.6);font-weight:500}
+.hctas{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+
+/* LOGO STRIP */
+.lstrip{background:#fff;border-bottom:1px solid var(--slate-200);padding:24px 0}
+.lsi{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.lslbl{font-size:13px;font-weight:600;color:var(--slate-400);white-space:nowrap;flex-shrink:0}
+.lslogos{display:flex;gap:14px;flex-wrap:wrap}
+.lslogo{display:flex;align-items:center;gap:9px;background:var(--bg);border-radius:var(--rm);padding:9px 16px;border:1px solid var(--slate-200)}
+.llicon{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex-shrink:0}
+.llname{font-size:13px;font-weight:600;color:var(--slate-700)}
+.llsz{font-size:11px;color:var(--slate-400)}
+
+/* DEF */
+.def{padding:72px 0;background:#fff}
+.def-title{font-size:clamp(22px,3vw,32px);font-weight:800;color:var(--navy-600);letter-spacing:-.02em;text-align:center;margin-bottom:32px}
+.def-card{background:var(--bg);border-radius:var(--r2);padding:40px 44px;max-width:860px;margin:0 auto;border:1px solid var(--slate-200)}
+.def-card p{font-size:16px;line-height:1.8;color:var(--slate-700);margin-bottom:20px}
+.def-card strong{color:var(--navy-600);font-weight:700}
+.def-bl{border-left:3px solid var(--navy-500);padding-left:20px;margin:20px 0;display:flex;flex-direction:column;gap:10px}
+.def-bl li{list-style:none;font-size:15px;color:var(--slate-600);display:flex;align-items:flex-start;gap:10px}
+.def-bl li::before{content:'💡';flex-shrink:0;font-size:14px;margin-top:1px}
+.def-icons{display:flex;gap:36px;padding-top:24px;border-top:1px solid var(--slate-200);flex-wrap:wrap}
+.dii{display:flex;flex-direction:column;align-items:center;gap:7px}
+.dic{width:46px;height:46px;border-radius:50%;background:var(--navy-600);display:flex;align-items:center;justify-content:center;font-size:20px}
+.dil{font-size:12px;font-weight:600;color:var(--slate-600);text-align:center}
+
+/* PROBLEMS */
+.prob-g{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
+.prob-card{background:#fff;border-radius:var(--rl);padding:24px;border:1.5px solid var(--amber-100);transition:all .18s}
+.prob-card:hover{border-color:var(--amber-500);transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,158,11,.1)}
+.pci{font-size:26px;margin-bottom:12px}
+.pct{font-size:15px;font-weight:700;color:var(--slate-900);margin-bottom:7px}
+.pcd{font-size:13px;color:var(--slate-500);line-height:1.6}
+.rstrip{background:#FEF2F2;border:1px solid #FEE2E2;border-left:4px solid #EF4444;border-radius:var(--rm);padding:16px 22px;display:flex;align-items:center;gap:14px;font-size:14px;color:#7F1D1D;font-weight:500}
+.rstrip strong{font-weight:800;margin-right:6px}
+
+/* TABS */
+.tabs-nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
+.tbtn{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;padding:10px 22px;border-radius:var(--rf);border:1.5px solid var(--slate-200);background:#fff;color:var(--slate-600);cursor:pointer;transition:all .18s;font-family:inherit}
+.tbtn:hover{border-color:var(--navy-400);color:var(--navy-600);background:var(--blue-50)}
+.tbtn.on{background:var(--navy-600);color:#fff;border-color:var(--navy-600);box-shadow:0 4px 16px rgba(30,58,138,.25)}
+.tpanel{display:none;animation:fu .3s ease}
+.tpanel.on{display:block}
+@keyframes fu{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.fpanel{background:var(--bg);border:1px solid var(--slate-200);border-radius:var(--r2);padding:40px 44px;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.fpe{font-size:11px;font-weight:700;color:var(--navy-600);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.fph{font-size:22px;font-weight:800;color:var(--navy-600);margin-bottom:8px;letter-spacing:-.02em}
+.fpd{font-size:15px;color:var(--slate-600);line-height:1.7;margin-bottom:24px}
+.fplist{display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
+.fpit{display:flex;align-items:flex-start;gap:10px}
+.fpdot{width:20px;height:20px;border-radius:50%;background:var(--green-100);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--green-700);font-weight:700;flex-shrink:0;margin-top:1px}
+.fptx{font-size:14px;color:var(--slate-700);font-weight:500;line-height:1.5}
+.fplink{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--navy-500);transition:gap .15s}
+.fplink:hover{gap:10px;color:var(--navy-600)}
+.fpvis{background:#fff;border-radius:var(--rx);padding:24px;border:1px solid var(--slate-200)}
+.fpvh{font-size:12px;font-weight:700;color:var(--slate-400);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px}
+.fpvm{display:flex;align-items:center;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--slate-100)}
+.fpvm:last-child{border-bottom:none}
+.fpvml{font-size:13px;color:var(--slate-600);font-weight:500}
+.fpvmv{font-size:14px;font-weight:700;color:var(--green-700)}
+.fpvbar{height:5px;border-radius:100px;background:var(--slate-200);margin-top:5px;overflow:hidden}
+.fpvfill{height:100%;border-radius:100px;background:var(--green-600)}
+.fpvn{background:var(--blue-50);border:1px solid var(--blue-light);border-radius:var(--rm);padding:13px 16px;margin-top:16px;font-size:13px;color:var(--navy-600);font-weight:600;text-align:center}
+
+/* RESULTS */
+.res-g{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.res-card{background:#fff;border-radius:var(--rx);padding:32px 24px;text-align:center;border:1px solid var(--slate-200);transition:all .2s}
+.res-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,.08);border-color:var(--navy-400)}
+.rci{font-size:32px;margin-bottom:12px}
+.rcn{font-size:44px;font-weight:900;letter-spacing:-.05em;line-height:1;margin-bottom:6px}
+.rcn.b{color:var(--navy-600)}
+.rcn.gr{color:var(--green-600)}
+.rcl{font-size:14px;color:var(--slate-500);font-weight:500;line-height:1.45}
+
+/* COMP TABLE */
+.ctbl-wrap{background:#fff;border-radius:var(--r2);overflow:hidden;border:1px solid var(--slate-200);max-width:820px;margin:0 auto}
+.ctbl{width:100%;border-collapse:collapse}
+.ctbl thead{background:var(--navy-600)}
+.ctbl thead th{padding:16px 22px;font-size:13px;font-weight:700;text-align:left;color:rgba(255,255,255,.75)}
+.ctbl thead th:first-child{color:#fff}
+.ctbl thead th.zc{color:#4ADE80}
+.ctbl tbody td{padding:13px 22px;font-size:14px;border-bottom:1px solid var(--slate-100)}
+.ctbl tbody td:first-child{font-weight:600;color:var(--slate-800)}
+.ctbl tbody td.c{text-align:center}
+.ctbl tbody tr:nth-child(even){background:var(--slate-50)}
+.ctbl tbody tr:last-child td{border-bottom:none}
+.cy{color:var(--green-600);font-weight:700}
+.cn{color:var(--slate-300)}
+.cp{color:var(--amber-500);font-weight:600}
+.cnote{font-size:12px;color:var(--slate-400);text-align:center;margin-top:14px}
+
+/* INDUSTRIES */
+.ind-g{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:820px;margin:40px auto 0}
+.indc{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--slate-200);border-radius:var(--rl);padding:18px 20px;transition:all .18s}
+.indc:hover{border-color:var(--navy-400);box-shadow:0 4px 20px rgba(30,58,138,.09);transform:translateY(-2px)}
+.indci{width:44px;height:44px;border-radius:var(--rm);background:var(--blue-50);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.indcn{font-size:14px;font-weight:700;color:var(--slate-900)}
+.indcs{font-size:12px;color:var(--green-600);font-weight:600;margin-top:2px}
+
+/* COMPLIANCE DARK */
+.comp-dk{background:var(--navy-600);padding:var(--py) 0}
+.cg{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}
+.cgi{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:var(--rm);padding:16px 18px;transition:all .18s}
+.cgi:hover{background:rgba(255,255,255,.14)}
+.cgck{width:24px;height:24px;border-radius:50%;background:rgba(34,197,94,.2);border:1.5px solid var(--green-500);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--green-500);font-weight:700;flex-shrink:0}
+.cgl{font-size:14px;font-weight:600;color:#fff}
+
+/* TESTI */
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tcard{background:var(--bg);border-radius:var(--rx);padding:28px;border:1px solid var(--slate-200);transition:all .18s}
+.tcard:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(0,0,0,.07)}
+.tst{font-size:14px;color:#F59E0B;margin-bottom:14px}
+.tq{font-size:15px;color:var(--slate-700);line-height:1.7;margin-bottom:20px;font-style:italic}
+.tau{display:flex;align-items:center;gap:12px}
+.taav{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#fff;flex-shrink:0}
+.tan{font-size:14px;font-weight:700;color:var(--slate-900)}
+.tar{font-size:12px;color:var(--slate-400)}
+
+/* WHY */
+.why-g{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.wyc{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--slate-200);border-radius:var(--rl);padding:22px;transition:all .18s}
+.wyc:hover{border-color:var(--navy-400);box-shadow:0 4px 20px rgba(30,58,138,.08)}
+.wyi{width:44px;height:44px;border-radius:var(--rm);background:var(--blue-50);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.wyt{font-size:15px;font-weight:700;color:var(--slate-900);margin-bottom:5px}
+.wyd{font-size:13px;color:var(--slate-500);line-height:1.6}
+
+/* PRICING */
+.price-g{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:920px;margin:40px auto 0}
+.pcard{background:#fff;border:1px solid var(--slate-200);border-radius:var(--r2);padding:32px 28px;transition:all .2s;position:relative}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(0,0,0,.09)}
+.pcard.feat{border-color:var(--navy-600);border-width:2px}
+.pbadge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--navy-600);color:#fff;font-size:12px;font-weight:700;padding:4px 16px;border-radius:var(--rf);white-space:nowrap}
+.ptier{font-size:13px;font-weight:700;color:var(--slate-400);text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px}
+.pamt{font-size:38px;font-weight:900;color:var(--navy-600);letter-spacing:-.04em;line-height:1;margin-bottom:4px}
+.pamt sup{font-size:20px;vertical-align:top;margin-top:8px}
+.pper{font-size:13px;color:var(--slate-400);margin-bottom:20px}
+.pfeats{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.pfi{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--slate-700);font-weight:500}
+.pfi::before{content:'✓';color:var(--green-600);font-weight:800;flex-shrink:0}
+.pfi.off{color:var(--slate-300)}
+.pfi.off::before{content:'—';color:var(--slate-300)}
+
+/* FAQ */
+.faq-wrap{max-width:760px;margin:40px auto 0}
+.faqitem{border-bottom:1px solid var(--slate-200)}
+.faqitem:first-child{border-top:1px solid var(--slate-200)}
+.faqq{display:flex;justify-content:space-between;align-items:center;padding:20px 0;cursor:pointer;gap:24px;font-size:15px;font-weight:600;color:var(--slate-800);transition:color .15s}
+.faqq:hover{color:var(--navy-600)}
+.faqchev{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--slate-200);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--slate-400);flex-shrink:0;transition:all .2s}
+.faqitem.op .faqq{color:var(--navy-600)}
+.faqitem.op .faqchev{background:var(--navy-600);border-color:var(--navy-600);color:#fff;transform:rotate(180deg)}
+.faqa{display:none;padding-bottom:20px;font-size:14px;line-height:1.8;color:var(--slate-600)}
+.faqitem.op .faqa{display:block}
+
+/* CTA DARK */
+.ctasec{padding:var(--py) 0;text-align:center;background:linear-gradient(135deg,var(--navy-950) 0%,var(--navy-700) 55%,var(--navy-600) 100%);position:relative;overflow:hidden}
+.ctasec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 100%,rgba(37,99,235,.25) 0%,transparent 70%)}
+.ctasec>.container{position:relative;z-index:1}
+.ctasec h2{font-size:clamp(28px,4vw,46px);font-weight:900;color:#fff;letter-spacing:-.04em;margin-bottom:14px;line-height:1.1}
+.ctasec p{font-size:17px;color:rgba(255,255,255,.6);margin-bottom:36px}
+.ctabtns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.ctatrust{display:flex;justify-content:center;gap:28px;flex-wrap:wrap}
+.ctti{font-size:13px;color:rgba(255,255,255,.5);display:flex;align-items:center;gap:6px}
+.ctti::before{content:'✓';color:var(--green-500);font-weight:800}
+
+/* FOOTER */
+footer{background:var(--navy-900);padding:60px 0 0}
+.ftop{display:grid;grid-template-columns:210px 1fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.flogo{font-size:20px;font-weight:900;color:#fff;letter-spacing:-.03em;margin-bottom:10px}
+.flogo .dot{color:var(--green-500)}
+.fdesc{font-size:13px;color:#6B7280;line-height:1.65;margin-bottom:18px}
+.fsoc{display:flex;gap:8px}
+.fsocb{width:34px;height:34px;border-radius:var(--r);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:13px;color:#6B7280;transition:all .15s;cursor:pointer}
+.fsocb:hover{background:rgba(255,255,255,.12);color:#fff}
+.fcol h5{font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}
+.fcol ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.fcol a{font-size:14px;color:#6B7280;transition:color .15s}
+.fcol a:hover{color:#D1D5DB}
+.bhire{display:inline-block;font-size:10px;font-weight:700;background:var(--green-600);color:#fff;padding:1px 7px;border-radius:100px;margin-left:6px}
+.fcon{border-top:1px solid rgba(255,255,255,.06);padding:24px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.fconi{display:flex;align-items:center;gap:12px}
+.fconicon{font-size:18px}
+.fconlbl{font-size:11px;color:#6B7280;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+.fconval{font-size:14px;color:#D1D5DB;font-weight:500;margin-top:2px}
+.fbot{border-top:1px solid rgba(255,255,255,.06);padding:20px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.fcopy{font-size:13px;color:#6B7280}
+.fleg{display:flex;gap:20px}
+.fleg a{font-size:13px;color:#6B7280;transition:color .15s}
+.fleg a:hover{color:#D1D5DB}
+
+/* STICKY / WA */
+.sbar{position:fixed;bottom:0;left:0;right:0;background:var(--navy-900);border-top:1px solid rgba(255,255,255,.08);padding:14px 28px;display:flex;align-items:center;justify-content:space-between;z-index:300;transform:translateY(100%);transition:transform .3s}
+.sbar.sh{transform:translateY(0)}
+.sbh{font-size:14px;font-weight:700;color:#fff}
+.sbs{font-size:12px;color:rgba(255,255,255,.4)}
+.sbctas{display:flex;gap:10px}
+.wa{position:fixed;bottom:80px;right:24px;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;z-index:250;box-shadow:0 4px 20px rgba(37,211,102,.45);cursor:pointer;transition:transform .2s}
+.wa:hover{transform:scale(1.1)}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .5s,transform .5s}
+.rv.vis{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .ftop{grid-template-columns:1fr 1fr 1fr}
+  .fpanel{grid-template-columns:1fr}
+  .res-g{grid-template-columns:1fr 1fr}
+  .cg{grid-template-columns:1fr 1fr}
+  .tg{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  :root{--py:60px}
+  .nmenu{display:none}
+  .hero{padding:60px 0 52px}
+  .prob-g{grid-template-columns:1fr}
+  .ind-g{grid-template-columns:1fr 1fr}
+  .why-g{grid-template-columns:1fr}
+  .tg{grid-template-columns:1fr}
+  .price-g{grid-template-columns:1fr}
+  .res-g{grid-template-columns:1fr 1fr}
+  .ftop{grid-template-columns:1fr 1fr}
+  .fcon{grid-template-columns:1fr}
+  .fbot{flex-direction:column;text-align:center}
+  .fpanel{padding:28px 24px}
+  .def-card{padding:28px 24px}
+  .sbar{flex-direction:column;gap:10px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav-w" id="nav">
+  <div class="container">
+    <nav class="nav">
+      <a href="/" class="logo">Zfour<span class="dot">.</span><span class="logo-lbl">HRMS</span></a>
+      <ul class="nmenu">
+        <li>
+          <a href="#">Solutions <span class="chev">▾</span></a>
+          <div class="dd">
+            <a href="/hrms-software-india">HRMS Software<span>All-in-one HR platform</span></a>
+            <a href="/payroll-software-india">Payroll Software<span>PF, ESI, TDS automated</span></a>
+            <a href="/attendance-management-software">Attendance Management<span>GPS + biometric tracking</span></a>
+            <a href="/employee-management-system">Employee Management<span>Full employee lifecycle</span></a>
+            <a href="/leave-management-software-india">Leave Management<span>Digital approvals</span></a>
+            <a href="/recruitment-management-system">Recruitment &amp; ATS<span>End-to-end hiring</span></a>
+            <a href="/overtime-management">Overtime Management<span>Factories Act compliant</span></a>
+            <a href="/reports-analytics">Reports &amp; Analytics<span>HR data insights</span></a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Industries <span class="chev">▾</span></a>
+          <div class="dd">
+            <a href="/hrms-for-startups">HRMS for Startups<span>Rapid scaling</span></a>
+            <a href="/hrms-for-sme">HRMS for SMEs<span>50–500 employees</span></a>
+            <a href="/hrms-for-manufacturing">Manufacturing<span>Shift-based operations</span></a>
+            <a href="/hrms-for-it-companies">IT Companies<span>Hybrid teams</span></a>
+            <a href="/hrms-for-retail">Retail &amp; E-commerce<span>Multi-location</span></a>
+            <a href="/hrms-for-healthcare">Healthcare<span>Professional sectors</span></a>
+            <a href="/hrms-for-schools">Schools<span>Educational institutions</span></a>
+            <a href="/hrms-for-enterprises">Enterprise<span>500+ employees</span></a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Resources <span class="chev">▾</span></a>
+          <div class="dd">
+            <a href="/blog">Blog &amp; Guides</a>
+            <a href="/hrms-guide-india">HRMS Guide India</a>
+            <a href="/payroll-compliance-india">Payroll Compliance Guide</a>
+            <a href="/hr-glossary">HR Glossary</a>
+            <a href="/faq">FAQ Hub</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Locations <span class="chev">▾</span></a>
+          <div class="dd">
+            <a href="/hrms-delhi">HRMS Delhi</a>
+            <a href="/hrms-gurgaon">HRMS Gurgaon</a>
+            <a href="/hrms-noida">HRMS Noida</a>
+            <a href="/payroll-delhi-ncr">Payroll Delhi NCR</a>
+            <a href="/locations">View All Locations →</a>
+          </div>
+        </li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/about-us">About</a></li>
+      </ul>
+      <div class="nav-act">
+        <a href="/login" class="nlogin">Login</a>
+        <a href="/book-demo" class="btn btn-p btn-sm">Book Demo</a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hbadge"><span class="hbadge-dot"></span>India's #1 HRMS for Growing Businesses</div>
+    <h1>Complete <em>HR Ecosystem</em><br>for Indian Businesses</h1>
+    <p class="hero-sub">Automate payroll, attendance, compliance &amp; employee management. Built specifically for Indian statutory requirements — PF, ESI, TDS, PT.</p>
+    <div class="hpills">
+      <div class="hpill"><span class="hpn">500+</span><span class="hpl">Companies</span></div>
+      <div class="hpill"><span class="hpn">40%</span><span class="hpl">Less Admin Time</span></div>
+      <div class="hpill"><span class="hpn">100%</span><span class="hpl">Compliant</span></div>
+      <div class="hpill"><span class="hpn">₹99</span><span class="hpl">Per Employee/Month</span></div>
+    </div>
+    <div class="hctas">
+      <a href="/book-demo" class="btn btn-g btn-lg">▶ Book Free Demo</a>
+      <a href="/pricing" class="btn btn-gh btn-lg">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO STRIP -->
+<div class="lstrip">
+  <div class="container">
+    <div class="lsi">
+      <span class="lslbl">Trusted by 500+ companies</span>
+      <div class="lslogos">
+        <div class="lslogo"><div class="llicon" style="background:#1E3A8A">T</div><div><div class="llname">TechCorp India</div><div class="llsz">Delhi · 280 emp</div></div></div>
+        <div class="lslogo"><div class="llicon" style="background:#16A34A">G</div><div><div class="llname">GreenMfg Pvt</div><div class="llsz">Pune · 620 emp</div></div></div>
+        <div class="lslogo"><div class="llicon" style="background:#7C3AED">R</div><div><div class="llname">RetailMax Ltd</div><div class="llsz">Mumbai · 440 emp</div></div></div>
+        <div class="lslogo"><div class="llicon" style="background:#0891B2">H</div><div><div class="llname">HealthFirst</div><div class="llsz">Bengaluru · 190 emp</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DEFINITION -->
+<section class="def">
+  <div class="container">
+    <h2 class="def-title">What is HRMS Software? — The Complete Answer</h2>
+    <div class="def-card">
+      <p><strong>HRMS (Human Resource Management System)</strong> is a cloud platform that centralises and automates your entire HR function — from hiring and onboarding to payroll, attendance, leave, compliance, and offboarding — in one integrated system.</p>
+      <div class="def-bl">
+        <ul>
+          <li>Replaces disconnected spreadsheets with one intelligent system for all HR workflows</li>
+          <li>Ensures 100% compliance with Indian statutory rules — PF, ESI, TDS, PT, Gratuity, and Bonus Act</li>
+          <li>Provides real-time visibility into attendance, payroll costs, headcount, and workforce analytics</li>
+          <li>Empowers employees with self-service access to payslips, leave balances, and HR data on mobile</li>
+        </ul>
+      </div>
+      <div class="def-icons">
+        <div class="dii"><div class="dic">⚡</div><div class="dil">Automated</div></div>
+        <div class="dii"><div class="dic">🏛️</div><div class="dil">Compliant</div></div>
+        <div class="dii"><div class="dic">📈</div><div class="dil">Scalable</div></div>
+        <div class="dii"><div class="dic">📱</div><div class="dil">Mobile-First</div></div>
+        <div class="dii"><div class="dic">🔒</div><div class="dil">Secure</div></div>
+        <div class="dii"><div class="dic">🇮🇳</div><div class="dil">India-Native</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMS -->
+<section class="section alt rv">
+  <div class="container">
+    <div class="tc" style="margin-bottom:36px">
+      <div class="eyebrow">The Problem</div>
+      <h2 class="h2">Why Manual HR is Hurting Your Business</h2>
+      <p class="sub">Growing Indian companies face compliance complexity, payroll errors, and inefficiencies that spreadsheets simply cannot handle.</p>
+    </div>
+    <div class="prob-g">
+      <div class="prob-card"><div class="pci">📋</div><div class="pct">Multi-State Compliance</div><div class="pcd">Different PF, ESI, PT, and minimum wage rules across states require constant manual tracking and updates every month.</div></div>
+      <div class="prob-card"><div class="pci">🏢</div><div class="pct">Hybrid Workforce Chaos</div><div class="pcd">Managing remote, on-site, and field employees across locations without a unified system leads to costly errors.</div></div>
+      <div class="prob-card"><div class="pci">💸</div><div class="pct">Payroll Errors &amp; Disputes</div><div class="pcd">Manual salary calculations create incorrect payslips, compliance penalties, and growing employee distrust.</div></div>
+      <div class="prob-card"><div class="pci">🗂️</div><div class="pct">Data Silos</div><div class="pcd">Disconnected tools for attendance, payroll, and HR create inconsistencies that slow every decision.</div></div>
+      <div class="prob-card"><div class="pci">📈</div><div class="pct">Can't Scale Manually</div><div class="pcd">What works at 20 employees breaks completely at 200. HR becomes the biggest bottleneck to your growth.</div></div>
+      <div class="prob-card"><div class="pci">📵</div><div class="pct">No Employee Self-Service</div><div class="pcd">Employees call HR for payslips and leave balances daily — wasting everyone's time, every single day.</div></div>
+    </div>
+    <div class="rstrip">
+      <span style="font-size:22px">⚠️</span>
+      <div><strong>Result:</strong> Compliance penalties · Employee disputes · Wasted HR hours · Stunted business growth</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES TABS -->
+<section class="section">
+  <div class="container">
+    <div class="tc" style="margin-bottom:8px">
+      <div class="eyebrow">Platform</div>
+      <h2 class="h2">Complete HR Ecosystem — One Platform</h2>
+      <p class="sub">Every HR workflow your business needs, deeply integrated. Not a collection of point solutions.</p>
+    </div>
+    <div class="tabs-nav" style="margin-top:36px">
+      <button class="tbtn on" onclick="setT(0)">💰 Payroll</button>
+      <button class="tbtn" onclick="setT(1)">📍 Attendance</button>
+      <button class="tbtn" onclick="setT(2)">👥 Employee</button>
+      <button class="tbtn" onclick="setT(3)">🏖️ Leave</button>
+      <button class="tbtn" onclick="setT(4)">🔍 Recruitment</button>
+    </div>
+
+    <div class="tpanel on" id="t0"><div class="fpanel">
+      <div><div class="fpe">Payroll Management</div><div class="fph">Smart Payroll — Automated &amp; 100% Compliant</div><div class="fpd">From gross-to-net calculations to PF/ESI/TDS filing — Zfour automates the entire Indian payroll process. Run payroll for your entire company in under 10 minutes.</div>
+      <div class="fplist">
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Gross-to-net automation with all Indian statutory deductions</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">PF, ESI, PT, TDS, Gratuity — calculated automatically every month</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Form 16, Form 24Q, PF ECR — all returns generated one-click</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Variable pay, bonuses, arrears, reimbursements — all handled</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Direct bank salary credit with confirmation tracking</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Digital payslips delivered to employees on mobile instantly</div></div>
+      </div>
+      <a href="/payroll-software-india" class="fplink">Explore Payroll Software →</a></div>
+      <div class="fpvis"><div class="fpvh">Payroll Run — April 2026</div>
+        <div class="fpvm"><div><div class="fpvml">Payroll processed</div><div class="fpvbar"><div class="fpvfill" style="width:100%"></div></div></div><div class="fpvmv">100%</div></div>
+        <div class="fpvm"><div><div class="fpvml">PF deductions verified</div><div class="fpvbar"><div class="fpvfill" style="width:100%"></div></div></div><div class="fpvmv">Zero errors</div></div>
+        <div class="fpvm"><div><div class="fpvml">TDS calculated correctly</div><div class="fpvbar"><div class="fpvfill" style="width:100%"></div></div></div><div class="fpvmv">100%</div></div>
+        <div class="fpvm"><div><div class="fpvml">Payslips sent &amp; opened</div><div class="fpvbar"><div class="fpvfill" style="width:98%"></div></div></div><div class="fpvmv">98%</div></div>
+        <div class="fpvn">⚡ Average payroll run time: <strong>8 minutes</strong> for 250 employees</div>
+      </div>
+    </div></div>
+
+    <div class="tpanel" id="t1"><div class="fpanel">
+      <div><div class="fpe">Attendance Management</div><div class="fph">GPS Attendance — Track Every Employee, Everywhere</div><div class="fpd">Real-time attendance via GPS geofencing, biometric integration, or mobile selfie. Data flows directly into payroll — no manual entry needed.</div>
+      <div class="fplist">
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">GPS geofencing — employees must be at the work location to clock in</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Biometric device integration (fingerprint + face recognition)</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Real-time dashboard — see who's present, absent, or late right now</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Overtime tracking with Factories Act compliance enforced</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Late marks, early departures, break tracking — all automated</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Monthly attendance reports in one click per employee or team</div></div>
+      </div>
+      <a href="/attendance-management-software" class="fplink">Explore Attendance →</a></div>
+      <div class="fpvis"><div class="fpvh">Today's Attendance — Live</div>
+        <div class="fpvm"><div><div class="fpvml">Present today</div><div class="fpvbar"><div class="fpvfill" style="width:91%"></div></div></div><div class="fpvmv">91% (228)</div></div>
+        <div class="fpvm"><div><div class="fpvml">On leave (approved)</div><div class="fpvbar"><div class="fpvfill" style="width:6%;background:#7C3AED"></div></div></div><div class="fpvmv">6% (15)</div></div>
+        <div class="fpvm"><div><div class="fpvml">Late arrivals</div><div class="fpvbar"><div class="fpvfill" style="width:3%;background:var(--amber-500)"></div></div></div><div class="fpvmv">3% (7)</div></div>
+        <div class="fpvn">📍 GPS verified. No buddy-punching possible.</div>
+      </div>
+    </div></div>
+
+    <div class="tpanel" id="t2"><div class="fpanel">
+      <div><div class="fpe">Employee Management</div><div class="fph">Full Employee Lifecycle — Hire to Retire</div><div class="fpd">Manage the entire employee journey in one place. From digital onboarding and document collection to appraisals, promotions, and offboarding.</div>
+      <div class="fplist">
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Digital offer letters, appointment letters, and ID card generation</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Employee self-service portal — update info, upload documents</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Org chart, reporting hierarchy, and team management built-in</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Transfer, promotion, increment letters — generated in seconds</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Separation management with full &amp; final settlement automation</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Document expiry alerts — passport, PAN, Aadhaar, certifications</div></div>
+      </div>
+      <a href="/employee-management-system" class="fplink">Explore Employee Management →</a></div>
+      <div class="fpvis"><div class="fpvh">Employee Dashboard</div>
+        <div class="fpvm"><span class="fpvml">Total employees</span><span style="font-size:22px;font-weight:900;color:var(--navy-600)">248</span></div>
+        <div class="fpvm"><span class="fpvml">New joiners (month)</span><span class="fpvmv">12</span></div>
+        <div class="fpvm"><span class="fpvml">Offboarding in progress</span><span style="color:var(--amber-500);font-weight:700">3</span></div>
+        <div class="fpvm"><span class="fpvml">Documents expiring (30d)</span><span style="color:#EF4444;font-weight:700">5 ⚠️</span></div>
+        <div class="fpvm"><span class="fpvml">Profiles complete</span><span class="fpvmv">96%</span></div>
+        <div class="fpvn">🏆 98% employee satisfaction with self-service portal</div>
+      </div>
+    </div></div>
+
+    <div class="tpanel" id="t3"><div class="fpanel">
+      <div><div class="fpe">Leave Management</div><div class="fph">Digital Leave — No Paper, No WhatsApp</div><div class="fpd">Employees apply on mobile. Managers approve in one tap. Balances update automatically. All leave types and accrual rules handled.</div>
+      <div class="fplist">
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">All leave types — earned, sick, casual, maternity, paternity, LOP</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Customisable accrual rules and carry-forward policies per company</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Mobile application and one-tap manager approval workflow</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Team calendar — see who's on leave before approving requests</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Leave encashment, comp-off, and half-day leave all handled</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">LOP auto-deducted from salary — no manual payroll adjustment</div></div>
+      </div>
+      <a href="/leave-management-software-india" class="fplink">Explore Leave Management →</a></div>
+      <div class="fpvis"><div class="fpvh">Leave Summary — April</div>
+        <div class="fpvm"><span class="fpvml">Pending approvals</span><span style="color:var(--amber-500);font-weight:700">4 requests</span></div>
+        <div class="fpvm"><span class="fpvml">Approved this month</span><span class="fpvmv">38 requests</span></div>
+        <div class="fpvm"><span class="fpvml">LOP applied to payroll</span><span class="fpvmv">Auto ✅</span></div>
+        <div class="fpvn">⏱️ Average approval time: <strong>47 minutes</strong></div>
+      </div>
+    </div></div>
+
+    <div class="tpanel" id="t4"><div class="fpanel">
+      <div><div class="fpe">Recruitment &amp; ATS</div><div class="fph">Hire Faster — End-to-End ATS Built In</div><div class="fpd">Post jobs, track applications, schedule interviews, send offers, and onboard — all from the same HRMS. No separate ATS subscription.</div>
+      <div class="fplist">
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Job posting to career page, LinkedIn, Naukri, Indeed in one click</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Kanban pipeline — track candidates from applied to offer accepted</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Interview scheduling with calendar integration and auto-reminders</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Digital offer letters and e-signature collection</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">New hire auto-added to payroll and attendance on joining date</div></div>
+        <div class="fpit"><div class="fpdot">✓</div><div class="fptx">Source tracking — know which channels give the best hires</div></div>
+      </div>
+      <a href="/recruitment-management-system" class="fplink">Explore Recruitment →</a></div>
+      <div class="fpvis"><div class="fpvh">Hiring Pipeline — Live</div>
+        <div class="fpvm"><div><div class="fpvml">Applied</div><div class="fpvbar"><div class="fpvfill" style="width:100%"></div></div></div><div class="fpvmv">142</div></div>
+        <div class="fpvm"><div><div class="fpvml">Shortlisted</div><div class="fpvbar"><div class="fpvfill" style="width:35%"></div></div></div><div class="fpvmv">50</div></div>
+        <div class="fpvm"><div><div class="fpvml">Interviewed</div><div class="fpvbar"><div class="fpvfill" style="width:18%"></div></div></div><div class="fpvmv">26</div></div>
+        <div class="fpvm"><div><div class="fpvml">Offer sent</div><div class="fpvbar"><div class="fpvfill" style="width:8%"></div></div></div><div class="fpvmv">11</div></div>
+        <div class="fpvn">🚀 Time-to-hire reduced by <strong>40%</strong></div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="section alt rv">
+  <div class="container">
+    <div class="tc" style="margin-bottom:44px">
+      <div class="eyebrow g">Results</div>
+      <h2 class="h2">What Our Customers Achieve</h2>
+    </div>
+    <div class="res-g">
+      <div class="res-card"><div class="rci">⏱️</div><div class="rcn b">40%</div><div class="rcl">Reduction in HR admin time per week</div></div>
+      <div class="res-card"><div class="rci">💰</div><div class="rcn gr">₹0</div><div class="rcl">Payroll errors or compliance penalties after switch</div></div>
+      <div class="res-card"><div class="rci">🚀</div><div class="rcn b">7 days</div><div class="rcl">Average time to go live from signup</div></div>
+      <div class="res-card"><div class="rci">⭐</div><div class="rcn gr">4.8★</div><div class="rcl">Average customer rating on G2 and Capterra</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="section">
+  <div class="container">
+    <div class="tc" style="margin-bottom:36px">
+      <div class="eyebrow">Why Zfour</div>
+      <h2 class="h2">Zfour vs Generic HRMS Solutions</h2>
+      <p class="sub">Most platforms are built for global markets and retrofitted for India. Zfour is built India-first.</p>
+    </div>
+    <div class="ctbl-wrap">
+      <table class="ctbl">
+        <thead><tr><th>Feature</th><th>Generic Global HRMS</th><th>Excel / Manual</th><th class="zc">Zfour HRMS ✓</th></tr></thead>
+        <tbody>
+          <tr><td>India-native PF/ESI/PT calculation</td><td class="c cn">❌ Requires config</td><td class="c cn">❌ Manual</td><td class="c cy">✅ Pre-built</td></tr>
+          <tr><td>Factories Act compliance enforcement</td><td class="c cn">❌ Not available</td><td class="c cn">❌ No</td><td class="c cy">✅ Automated</td></tr>
+          <tr><td>GPS attendance for field staff</td><td class="c cp">⚠️ Add-on cost</td><td class="c cn">❌ No</td><td class="c cy">✅ Included</td></tr>
+          <tr><td>Setup &amp; go-live time</td><td class="c cn">3–6 months</td><td class="c cp">Days (high risk)</td><td class="c cy">7 days</td></tr>
+          <tr><td>Multi-language &amp; Indian date formats</td><td class="c cp">⚠️ Varies</td><td class="c cn">❌ Manual</td><td class="c cy">✅ Yes</td></tr>
+          <tr><td>Starting price (per employee)</td><td class="c cn">₹400–800/mo</td><td class="c cp">₹0 (hidden costs)</td><td class="c cy">₹99/mo</td></tr>
+          <tr><td>Dedicated India implementation support</td><td class="c cn">❌ Offshore only</td><td class="c cn">❌ None</td><td class="c cy">✅ Dedicated manager</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cnote">*Based on publicly available information as of 2025. Features vary by plan. Verify before purchasing.</p>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section alt rv">
+  <div class="container tc">
+    <div class="eyebrow">Industries</div>
+    <h2 class="h2">Built for Every Indian Industry</h2>
+    <p class="sub">From manufacturing plants to IT startups — Zfour adapts to your industry's unique HR requirements.</p>
+    <div class="ind-g">
+      <a href="/hrms-for-manufacturing" class="indc"><div class="indci">🏭</div><div><div class="indcn">Manufacturing</div><div class="indcs">3-shift &amp; Factories Act</div></div></a>
+      <a href="/hrms-for-sme" class="indc"><div class="indci">🏢</div><div><div class="indcn">SMEs</div><div class="indcs">50–500 employees</div></div></a>
+      <a href="/hrms-for-startups" class="indc"><div class="indci">🚀</div><div><div class="indcn">Startups</div><div class="indcs">Rapid scaling</div></div></a>
+      <a href="/hrms-for-it-companies" class="indc"><div class="indci">💻</div><div><div class="indcn">IT Companies</div><div class="indcs">Hybrid &amp; remote teams</div></div></a>
+      <a href="/hrms-for-healthcare" class="indc"><div class="indci">🏥</div><div><div class="indcn">Healthcare</div><div class="indcs">Hospitals &amp; clinics</div></div></a>
+      <a href="/hrms-for-retail" class="indc"><div class="indci">🛒</div><div><div class="indcn">Retail</div><div class="indcs">Multi-location</div></div></a>
+      <a href="/hrms-for-schools" class="indc"><div class="indci">🎓</div><div><div class="indcn">Schools</div><div class="indcs">Education institutions</div></div></a>
+      <a href="/hrms-for-enterprises" class="indc"><div class="indci">🏛️</div><div><div class="indcn">Enterprise</div><div class="indcs">500+ employees</div></div></a>
+      <a href="/hrms-for-construction" class="indc"><div class="indci">🏗️</div><div><div class="indcn">Construction</div><div class="indcs">Site workforce</div></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE DARK -->
+<section class="comp-dk">
+  <div class="container tc">
+    <div class="eyebrow w" style="margin:0 auto 20px;display:table">🇮🇳 Indian Statutory Compliance</div>
+    <h2 class="h2 w">Every Regulation. Automated.</h2>
+    <p class="sub w" style="margin:0 auto">All Indian labour laws enforced automatically — updated as regulations change.</p>
+    <div class="cg">
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">PF / EPF Contributions</div></div>
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">ESI / ESIC</div></div>
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">TDS Section 192</div></div>
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">Professional Tax</div></div>
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">Gratuity Act 1972</div></div>
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">Factories Act 1948</div></div>
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">Minimum Wages Act</div></div>
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">Payment of Bonus Act</div></div>
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">Maternity Benefit Act</div></div>
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">Contract Labour Act</div></div>
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">Payment of Wages Act</div></div>
+      <div class="cgi"><div class="cgck">✓</div><div class="cgl">Labour Welfare Fund</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section rv">
+  <div class="container">
+    <div class="tc" style="margin-bottom:44px">
+      <div class="eyebrow">Customer Stories</div>
+      <h2 class="h2">What Our Customers Say</h2>
+    </div>
+    <div class="tg">
+      <div class="tcard"><div class="tst">★★★★★</div><p class="tq">"Zfour saved our HR team 15 hours per week. Payroll that used to take 3 days now takes 20 minutes. PF compliance is fully automated — no single penalty in 18 months."</p><div class="tau"><div class="taav" style="background:#1E3A8A">R</div><div><div class="tan">Rajesh Gupta</div><div class="tar">HR Director · MetalCraft India · 620 employees</div></div></div></div>
+      <div class="tcard"><div class="tst">★★★★★</div><p class="tq">"The GPS attendance feature eliminated buddy punching completely. We had 40+ fake entries per month. Now it's zero. The ROI was visible in the very first month."</p><div class="tau"><div class="taav" style="background:#16A34A">P</div><div><div class="tan">Priya Sharma</div><div class="tar">COO · RetailMax Ltd · 440 stores</div></div></div></div>
+      <div class="tcard"><div class="tst">★★★★★</div><p class="tq">"Scaling from 30 to 180 employees in 14 months — Zfour grew with us seamlessly. Our HR team of 2 manages 180 people across 3 cities without stress."</p><div class="tau"><div class="taav" style="background:#7C3AED">A</div><div><div class="tan">Arjun Mehta</div><div class="tar">CEO · TechCorp India · 180 employees</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY ZFOUR -->
+<section class="section alt">
+  <div class="container">
+    <div class="tc" style="margin-bottom:44px">
+      <div class="eyebrow">Why Zfour</div>
+      <h2 class="h2">6 Reasons 500+ Companies Choose Zfour</h2>
+    </div>
+    <div class="why-g">
+      <div class="wyc"><div class="wyi">🇮🇳</div><div><div class="wyt">India-Native Compliance</div><div class="wyd">PF, ESI, PT, TDS built-in and auto-updated when laws change. Never configure compliance manually again.</div></div></div>
+      <div class="wyc"><div class="wyi">⚡</div><div><div class="wyt">Up &amp; Running in 7 Days</div><div class="wyd">Our team migrates your data, configures your setup, and trains your HR team. Go live in a week.</div></div></div>
+      <div class="wyc"><div class="wyi">🔗</div><div><div class="wyt">Truly Integrated Platform</div><div class="wyd">All modules share the same data. Attendance flows to payroll. Leave flows to both. No manual sync.</div></div></div>
+      <div class="wyc"><div class="wyi">💰</div><div><div class="wyt">Transparent Pricing</div><div class="wyd">₹99/employee/month. No hidden fees. No add-on charges for core features. GST invoice every month.</div></div></div>
+      <div class="wyc"><div class="wyi">📈</div><div><div class="wyt">Scales with Your Growth</div><div class="wyd">From 50 employees to 5,000 — Zfour handles it without re-implementation or additional licenses.</div></div></div>
+      <div class="wyc"><div class="wyi">🧑‍💼</div><div><div class="wyt">Dedicated Support</div><div class="wyd">A named account manager, WhatsApp support, and a dedicated onboarding specialist — not a ticket queue.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING TEASER -->
+<section class="section">
+  <div class="container">
+    <div class="tc" style="margin-bottom:8px">
+      <div class="eyebrow">Pricing</div>
+      <h2 class="h2">Simple, Transparent Pricing</h2>
+      <p class="sub">No hidden fees. No surprise invoices. Billed per active employee per month.</p>
+    </div>
+    <div class="price-g">
+      <div class="pcard"><div class="ptier">Starter</div><div class="pamt"><sup>₹</sup>99</div><div class="pper">per employee / month</div>
+        <div class="pfeats"><div class="pfi">Payroll processing</div><div class="pfi">PF &amp; ESI compliance</div><div class="pfi">Attendance tracking</div><div class="pfi">Leave management</div><div class="pfi">Employee self-service</div><div class="pfi off">GPS attendance</div><div class="pfi off">Recruitment ATS</div></div>
+        <a href="/pricing" class="btn btn-o" style="width:100%;justify-content:center">Get Started</a>
+      </div>
+      <div class="pcard feat"><div class="pbadge">Most Popular</div><div class="ptier">Growth</div><div class="pamt"><sup>₹</sup>149</div><div class="pper">per employee / month</div>
+        <div class="pfeats"><div class="pfi">Everything in Starter</div><div class="pfi">GPS attendance</div><div class="pfi">Shift &amp; roster management</div><div class="pfi">Recruitment ATS</div><div class="pfi">Performance management</div><div class="pfi">Advanced analytics</div><div class="pfi">Priority support</div></div>
+        <a href="/book-demo" class="btn btn-p" style="width:100%;justify-content:center">Book a Demo</a>
+      </div>
+      <div class="pcard"><div class="ptier">Enterprise</div><div class="pamt" style="font-size:28px;letter-spacing:-.02em;padding-top:8px">Custom</div><div class="pper">tailored for your organisation</div>
+        <div class="pfeats"><div class="pfi">Everything in Growth</div><div class="pfi">Unlimited locations</div><div class="pfi">Contractor workforce module</div><div class="pfi">Custom integrations &amp; API</div><div class="pfi">Dedicated account manager</div><div class="pfi">SLA-backed uptime</div></div>
+        <a href="/contact" class="btn btn-o" style="width:100%;justify-content:center">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section alt">
+  <div class="container">
+    <div class="tc">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="h2">Frequently Asked Questions</h2>
+      <p class="sub">Everything you need to know before choosing Zfour HRMS.</p>
+    </div>
+    <div class="faq-wrap">
+      <div class="faqitem op"><div class="faqq" onclick="faq(this)"><span>What is the best HRMS software in India for SMEs?</span><span class="faqchev">▲</span></div><div class="faqa">Zfour HRMS is purpose-built for Indian SMEs with native PF/ESI/TDS compliance, GPS attendance, shift management, and complete payroll automation — starting at ₹99/employee/month. It combines all HR workflows in one integrated platform.</div></div>
+      <div class="faqitem"><div class="faqq" onclick="faq(this)"><span>How much does HRMS software cost in India?</span><span class="faqchev">▼</span></div><div class="faqa">Zfour starts at ₹99/employee/month (Starter) and ₹149/employee/month (Growth, includes GPS and shift management). Enterprise pricing is custom for 500+ employees. All plans include setup support, GST invoice, no hidden charges.</div></div>
+      <div class="faqitem"><div class="faqq" onclick="faq(this)"><span>How long does HRMS implementation take?</span><span class="faqchev">▼</span></div><div class="faqa">Most customers go live within 7 working days. Our team handles data migration, configuration, and training. Enterprise organisations typically take 2–3 weeks with a dedicated implementation manager.</div></div>
+      <div class="faqitem"><div class="faqq" onclick="faq(this)"><span>Does Zfour handle Indian statutory compliance automatically?</span><span class="faqchev">▼</span></div><div class="faqa">Yes. PF (12% + 13.61%), ESI (0.75% + 3.25%), Professional Tax (state-wise), TDS Section 192, Gratuity, LWF, and Bonus Act — calculated every month automatically. All statutory returns (PF ECR, ESI returns, Form 24Q) generated one-click.</div></div>
+      <div class="faqitem"><div class="faqq" onclick="faq(this)"><span>Is there a mobile app for employees?</span><span class="faqchev">▼</span></div><div class="faqa">Yes. iOS and Android apps available. Employees can clock in/out with GPS, apply for leave, view payslips, check leave balances, and raise HR queries — all from their phone. Works on low-bandwidth connections for manufacturing and field use.</div></div>
+      <div class="faqitem"><div class="faqq" onclick="faq(this)"><span>Can we migrate from Keka, GreytHR, or Zoho People?</span><span class="faqchev">▼</span></div><div class="faqa">Yes. Zfour supports data migration from all major Indian HR platforms. Our implementation team handles migration of employee master data, historical payroll records, attendance history, and opening leave balances. Data migration is included in all plans.</div></div>
+      <div class="faqitem"><div class="faqq" onclick="faq(this)"><span>Is my employee data safe on Zfour?</span><span class="faqchev">▼</span></div><div class="faqa">All data is stored on Indian servers (AWS Mumbai region) and never leaves India. 256-bit AES encryption, role-based access controls, two-factor authentication, and regular security audits. Compliant with India's IT Act 2000 and PDPB framework.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctasec">
+  <div class="container">
+    <div class="eyebrow w" style="margin:0 auto 20px;display:table">🚀 Get Started Today</div>
+    <h2>Ready to Transform<br>Your HR Operations?</h2>
+    <p>Stop spreadsheets. Stop compliance worries. Start automation.<br>Join 500+ Indian companies already running on Zfour.</p>
+    <div class="ctabtns">
+      <a href="/book-demo" class="btn btn-g btn-lg">▶ Book Free Demo</a>
+      <a href="/pricing" class="btn btn-gh btn-lg">View Pricing</a>
+    </div>
+    <div class="ctatrust">
+      <div class="ctti">Free 14-day trial</div>
+      <div class="ctti">No credit card required</div>
+      <div class="ctti">Up &amp; running in 7 days</div>
+      <div class="ctti">Dedicated setup support</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="ftop">
+      <div><div class="flogo">Zfour<span class="dot">.</span></div><p class="fdesc">India's cloud HRMS for growing businesses. Payroll, attendance, leave, compliance &amp; employee management — one integrated platform.</p><div class="fsoc"><a href="https://linkedin.com/company/zfour" class="fsocb">in</a><a href="https://twitter.com/ZFourHRMS" class="fsocb">𝕏</a><a href="https://facebook.com/ZFour" class="fsocb">f</a><a href="https://youtube.com" class="fsocb">▶</a></div></div>
+      <div class="fcol"><h5>Platform</h5><ul>
+        <li><a href="/hrms-software-india">HRMS Software</a></li><li><a href="/payroll-software-india">Payroll Software</a></li>
+        <li><a href="/attendance-management-software">Attendance</a></li><li><a href="/employee-management-system">Employee Management</a></li>
+        <li><a href="/leave-management-software-india">Leave Management</a></li><li><a href="/shift-roster-management">Shift &amp; Roster</a></li>
+        <li><a href="/recruitment-management-system">Recruitment ATS</a></li><li><a href="/reports-analytics">Reports &amp; Analytics</a></li>
+      </ul></div>
+      <div class="fcol"><h5>Industries</h5><ul>
+        <li><a href="/hrms-for-manufacturing">Manufacturing</a></li><li><a href="/hrms-for-sme">SMEs</a></li>
+        <li><a href="/hrms-for-startups">Startups</a></li><li><a href="/hrms-for-it-companies">IT Companies</a></li>
+        <li><a href="/hrms-for-retail">Retail</a></li><li><a href="/hrms-for-healthcare">Healthcare</a></li>
+        <li><a href="/hrms-for-schools">Schools</a></li><li><a href="/hrms-for-enterprises">Enterprise</a></li>
+      </ul></div>
+      <div class="fcol"><h5>Resources</h5><ul>
+        <li><a href="/blog">Blog &amp; Guides</a></li><li><a href="/hrms-guide-india">HRMS Guide India</a></li>
+        <li><a href="/payroll-compliance-india">Payroll Compliance</a></li><li><a href="/hr-glossary">HR Glossary</a></li>
+        <li><a href="/faq">FAQ Hub</a></li><li><a href="/locations">All Locations</a></li>
+      </ul></div>
+      <div class="fcol"><h5>Company</h5><ul>
+        <li><a href="/about-us">About Zfour</a></li><li><a href="/pricing">Pricing</a></li>
+        <li><a href="/book-demo">Book Demo</a></li><li><a href="/contact">Contact Us</a></li>
+        <li><a href="/careers">Careers <span class="bhire">Hiring</span></a></li>
+        <li><a href="/privacy">Privacy Policy</a></li><li><a href="/security">Security</a></li>
+      </ul></div>
+    </div>
+    <div class="fcon">
+      <div class="fconi"><div class="fconicon">✉️</div><div><div class="fconlbl">Email</div><div class="fconval">hello@zfour.in</div></div></div>
+      <div class="fconi"><div class="fconicon">📞</div><div><div class="fconlbl">Sales</div><div class="fconval">+91 98765 43210</div></div></div>
+      <div class="fconi"><div class="fconicon">📍</div><div><div class="fconlbl">HQ</div><div class="fconval">Delhi NCR, India</div></div></div>
+    </div>
+    <div class="fbot">
+      <div class="fcopy">© 2026 Pantheon Digital Private Limited · 🇮🇳 Made in India · Data stored in India</div>
+      <div class="fleg"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/security">Security</a><a href="/cookies">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="wa" onclick="window.open('https://wa.me/919876543210?text=Hi, I want to know more about Zfour HRMS')">💬</div>
+<div class="sbar" id="sb"><div><div class="sbh">📊 See Zfour in Action — Free Demo</div><div class="sbs">Payroll, attendance &amp; compliance — live walkthrough, no commitment</div></div><div class="sbctas"><a href="/book-demo" class="btn btn-g btn-sm">Book Demo</a><a href="/pricing" class="btn btn-o btn-sm">Pricing</a></div></div>
+
+<script>
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('on',scrollY>20);
+  document.getElementById('sb').classList.toggle('sh',scrollY>600);
+});
+const tp=document.querySelectorAll('.tpanel'),tb=document.querySelectorAll('.tbtn');
+function setT(i){tp.forEach((p,x)=>p.classList.toggle('on',x===i));tb.forEach((b,x)=>b.classList.toggle('on',x===i))}
+function faq(q){const it=q.closest('.faqitem'),op=it.classList.contains('op');document.querySelectorAll('.faqitem').forEach(f=>{f.classList.remove('op');f.querySelector('.faqchev').textContent='▼'});if(!op){it.classList.add('op');q.querySelector('.faqchev').textContent='▲'}}
+const ob=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');ob.unobserve(x.target)}}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>ob.observe(el));
+</script>
+</body>
+</html>
